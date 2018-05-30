@@ -1,7 +1,7 @@
 # Site settings
-baseURL = "https://danielcheng.me"
+baseURL = "/"
 languageCode = "en-us"
-title = "Daniel Cheng"
+title = "Pleb on the Web"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
@@ -19,8 +19,8 @@ disqusShortname = "leoshnoire"
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
-  description = "Your description"
+  name = "Daniel Cheng"
+  description = "Pleb on the Web"
 
   # Link custom assets relative to /static
   custom_css = []

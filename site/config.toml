@@ -2,7 +2,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Pleb on the Web"
-theme = "Forty"
+theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""

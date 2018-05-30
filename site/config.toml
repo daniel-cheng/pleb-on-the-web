@@ -2,7 +2,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Pleb on the Web"
-theme = "forty"
+theme = "Forty"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
@@ -25,7 +25,7 @@ disqusShortname = "leoshnoire"
   # Link custom assets relative to /static
   custom_css = []
   custom_js  = []
-  favicon    = "favicon.ico"
+  favicon    = []
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""

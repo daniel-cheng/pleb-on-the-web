@@ -6,3 +6,9 @@
 
 [context.deploy-preview]
   command = "yarn build-preview"
+
+[context.production.environment]
+  HUGO_VERSION = "0.40"
+  
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.40"

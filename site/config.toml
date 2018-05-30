@@ -95,7 +95,7 @@ disqusShortname = "leoshnoire"
       title = "Photos"
       subtitle = ""
       image = "pic01.jpg"
-      url = "blogs/aliquam"
+      url = "photos"
 
     [[params.tiles.showcase]]
       title = "Games"

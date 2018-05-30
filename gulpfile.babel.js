@@ -3,12 +3,14 @@ import cp from "child_process";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
+import cssnext from "postcss-cssnext";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 import svgstore from "gulp-svgstore";
 import svgmin from "gulp-svgmin";
 import inject from "gulp-inject";
+import cssnano from "cssnano";
 
 const browserSync = BrowserSync.create();
 const hugoBin = `./bin/hugo.${process.platform === "win32" ? "exe" : process.platform}`;
@@ -20,11 +22,16 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
-gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
+gulp.task("build", ["css", "js", "hugo"]);
+gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
+    .pipe(postcss([
+      cssImport({from: "./src/css/main.css"}),
+      cssnext(),
+      cssnano(),
+    ]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));

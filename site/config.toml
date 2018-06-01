@@ -1,5 +1,5 @@
 # Site settings
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "Pleb on the Web"
 theme = "forty"

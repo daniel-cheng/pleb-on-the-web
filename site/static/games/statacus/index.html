@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Statacus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		 <meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Statacus</title>
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<link rel="shortcut icon" href="TemplateData/favicon.ico" />
+		<link rel="stylesheet" href="/css/main.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo"><strong>Daniel Cheng</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">Landing</a></li>
+							<li><a href="#">Generic</a></li>
+							<li><a href="#">Elements</a></li>
+						</ul>
+						<ul class="actions vertical">
+							<li><a href="#" class="button special fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<div class="template">
+							<p class="header"><span>Unity WebGL Player | </span>Statacus</p>
+							<p class="header"></p>
+							<div class="template-wrap clear">
+								<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+								<br>
+								<div class="logo"></div>
+								<div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+								<div class="title"><b>Statacus</b> - Victor Hsiao, Hao Quach, John Collins, Daniel Cheng</div>
+							</div>
+							<p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+							<script type='text/javascript'>
+								var Module = {
+								TOTAL_MEMORY: 268435456,
+								errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+								compatibilitycheck: null,
+								dataUrl: "Release/Build.data",
+								codeUrl: "Release/Build.js",
+								memUrl: "Release/Build.mem",
+
+								};
+							</script>
+							<script src="Release/UnityLoader.js"></script>
+						</div>
+					</div>
+			</div>
+							
+	</body>
+</html>

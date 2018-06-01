@@ -22,22 +22,8 @@ if (process.env.DEBUG) {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-gulp.task("build", ["js", "hugo"]);
-gulp.task("build-preview", ["js", "hugo-preview"]);
-
-gulp.task("js", (cb) => {
-  const myConfig = Object.assign({}, webpackConfig);
-
-  webpack(myConfig, (err, stats) => {
-    if (err) throw new gutil.PluginError("webpack", err);
-    gutil.log("[webpack]", stats.toString({
-      colors: true,
-      progress: true
-    }));
-    browserSync.reload();
-    cb();
-  });
-});
+gulp.task("build", ["hugo"]);
+gulp.task("build-preview", ["hugo-preview"]);
 
 gulp.task("svg", () => {
   const svgs = gulp
@@ -55,13 +41,12 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "js", "svg"], () => {
+gulp.task("server", ["hugo", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
     }
   });
-  gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./site/static/img/icons-*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });

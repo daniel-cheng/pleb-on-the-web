@@ -90,26 +90,26 @@ googleAnalytics = ""
     [[params.tiles.showcase]]
       title = "Photos"
       subtitle = ""
-      image = "pic01.jpg"
+      image = ""
       url = "photos"
 
     [[params.tiles.showcase]]
       title = "Games"
       subtitle = ""
-      image = "pic02.jpg"
-      url = "blogs/tempus"
+      image = ""
+      url = "games/statacus"
 
     [[params.tiles.showcase]]
       title = "Drawings"
       subtitle = ""
-      image = "pic03.jpg"
+      image = ""
       url = "drawings"
 
     [[params.tiles.showcase]]
       title = "Research"
       subtitle = ""
-      image = "pic04.jpg"
-      url = "blogs/ipsum"
+      image = ""
+      url = ""
 
     # You can make more showcases by copy and pasting the code above
 

@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "/"
+baseURL = "danielcheng.me"
 languageCode = "en-us"
 title = "Pleb on the Web"
 theme = "forty"
@@ -107,7 +107,7 @@ disqusShortname = "leoshnoire"
       title = "Drawings"
       subtitle = ""
       image = "pic03.jpg"
-      url = "blogs/magna"
+      url = "drawings"
 
     [[params.tiles.showcase]]
       title = "Research"

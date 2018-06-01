@@ -54,7 +54,11 @@ googleAnalytics = ""
     [[params.navigation.links]]
       name = "Drawings"
       url = "drawings"
-
+	  
+    [[params.navigation.links]]
+      name = "Games"
+      url = "games/statacus"
+	  
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
     # code below if you need more links. Buttons work in the same way.
@@ -88,25 +92,25 @@ googleAnalytics = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Photos"
+      title = "Photos~"
       subtitle = ""
       image = ""
       url = "photos"
 
     [[params.tiles.showcase]]
-      title = "Games"
+      title = "Games~"
       subtitle = ""
       image = ""
       url = "games/statacus"
 
     [[params.tiles.showcase]]
-      title = "Drawings"
+      title = "Drawings~"
       subtitle = ""
       image = ""
       url = "drawings"
 
     [[params.tiles.showcase]]
-      title = "Academic"
+      title = "Academics~"
       subtitle = ""
       image = ""
       url = ""

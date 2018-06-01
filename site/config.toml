@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "danielcheng.me"
+baseURL = ""
 languageCode = "en-us"
 title = "Pleb on the Web"
 theme = "forty"
@@ -8,7 +8,7 @@ theme = "forty"
 googleAnalytics = ""
 
 # Enter your disqus shortname to enable comments
-disqusShortname = "leoshnoire"
+#disqusShortname = "leoshnoire"
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
@@ -20,7 +20,7 @@ disqusShortname = "leoshnoire"
 
   # Provide your metadata here.
   name = "Daniel Cheng"
-  description = "Pleb on the Web"
+  description = "DC"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -48,16 +48,12 @@ disqusShortname = "leoshnoire"
       url = "#"
 
     [[params.navigation.links]]
-      name = "Blogs"
-      url = "blogs"
+      name = "Photos"
+      url = "photos"
 
     [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
-
-    [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
+      name = "Drawings"
+      url = "drawings"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -67,14 +63,14 @@ disqusShortname = "leoshnoire"
     #    url = "UrlOfLink"
 
     # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
+    #[[params.navigation.button1]]
+    #  name = "Get Started"
+    #  url = "blogs"
 
     # Button Style 2
     [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
+      name = "Admin"
+      url = "admin"
 
 
   # Banner section

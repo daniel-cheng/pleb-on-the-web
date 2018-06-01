@@ -1,5 +1,5 @@
 ---
-title: "Drawings"
+title: ""
 description: ""
 slug: ""
 image: ""
